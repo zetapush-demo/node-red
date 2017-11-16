@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('config-flow',{
+        category: 'test',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            apiUrl: {value:""},
+            sandboxId: {value:""}
+        },
+        inputs:1,
+        outputs:0,
+        icon: "file.png",
+        label: function() {
+            return this.name||"config-flow";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="config-flow">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-apiUrl"><i class="icon-tag"></i> apiUrl</label>
+        <input type="text" id="node-input-apiUrl" placeholder="apiUrl">
+    </div>
+    <div class="form-row">
+        <label for="node-input-sandboxId"><i class="icon-tag"></i> sandboxId</label>
+        <input type="text" id="node-input-sandboxId" placeholder="sandboxId">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="lower-case">
+    <p>A node to config our flow</p>
+</script>
