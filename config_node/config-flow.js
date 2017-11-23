@@ -22,6 +22,10 @@ module.exports = function(RED) {
 			const service = client.createService({
 			  Type: ZetaPush.services.Macro,
 			});
+
+			var flowContext = node.context().flow;
+      		flowContext.set("service", service);
+
 			this.log("input zetapush 3");
 
 			client.connect();

@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('macro-config',{
+        category: 'configuration',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            server: {value:"", type:"config-flow"}
+        },
+        inputs:1,
+        outputs:0,
+        icon: "file.png",
+        label: function() {
+            return this.name||"macro-config";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="macro-config">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Function Name</label>
+        <input type="text" id="node-input-name" placeholder="ZetaPush Function Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="macro-config">
+    <p>A node to retrieve the config /p>
+</script>
