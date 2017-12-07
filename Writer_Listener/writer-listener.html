@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('writer-listener',{
+        category: 'configuration',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            out: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"writer-listener";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="writer-listener">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Function Name</label>
+        <input type="text" id="node-input-name" placeholder="ZetaPush Function Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-out"><i class="icon-tag"></i> Event Name</label>
+        <input type="text" id="node-input-out" placeholder="ZetaPush Event Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="writer-listener">
+    <p>A node to send data et listen /p>
+</script>
