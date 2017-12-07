@@ -6,7 +6,7 @@ module.exports = function(RED) {
         	//require dans fichier global settings.js
         	var ZetaPush = require('zetapush-js');
 			var NodeJSTransports = require('zetapush-cometd/lib/node/Transports');
-			this.log("input zetapush 1");
+		
 
             // Create new ZetaPush Client
 			var client = new ZetaPush.Client({
@@ -17,7 +17,7 @@ module.exports = function(RED) {
 			    return ZetaPush.Authentication.weak({});
 			  },
 			});
-			this.log("input zetapush 2");
+		
 
 			const service = client.createService({
 			  Type: ZetaPush.services.Macro,
@@ -25,15 +25,16 @@ module.exports = function(RED) {
 
 			var flowContext = node.context().flow;
       		flowContext.set("service", service);
+      		flowContext.set("client", client);
 
-			this.log("input zetapush 3");
+	
 
 			client.connect();
 
 			client.onConnectionEstablished(function(){
 				node.log("Connexion établie");
 			});
-			this.log("input zetapush 4");
+
         
         	
         }
