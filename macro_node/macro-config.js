@@ -4,14 +4,8 @@ module.exports = function(RED) {
     var node = this;
 
     node.on('input', function(msg) {
-
-      // Retrieve the config node
-      //node.server = RED.nodes.getNode(config.server);
-
       var flowContext = node.context().flow;
       var service =flowContext.get("service");
-
-
 
       service.call({
 			 name: config.name,
