@@ -30,6 +30,6 @@ More documentation can be found [here](http://nodered.org/docs).
 3. Starting node-red
 
         1. node-red
-        2. Open <http://localhost:1880>
+        2. Open http://localhost:1880
         Now you have access to the project's nodes module.
 
