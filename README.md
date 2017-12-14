@@ -1,5 +1,5 @@
 # Node-RED
-ZetaPush integration to Node-red
+ZetaPush integration to Node-RED
 
 ## Getting Started
 
