@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "red-contrib-config-flow",
   "version": "0.0.1",
   "description": "A sample node for node-red",
@@ -22,7 +21,7 @@
   },
   "author": "",
   "license": "ISC"
-=======
+
     "name": "node-red-contrib-config-flow",
     "version": "0.0.1",
     "description": "A sample node for node-red",
@@ -38,5 +37,4 @@
             "sample": "config-flow.js"
         }
     }
->>>>>>> ce853c8d484fc50fdb45759e1615c5e4c4f85483
 }
