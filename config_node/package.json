@@ -21,20 +21,4 @@
   },
   "author": "",
   "license": "ISC"
-
-    "name": "node-red-contrib-config-flow",
-    "version": "0.0.1",
-    "description": "A sample node for node-red",
-    "dependencies": {
-        "zetapush-cometd": "^3.2.0",
-        "zetapush-js": "3.2.0"
-    },
-    "keywords": [
-        "node-red"
-    ],
-    "node-red": {
-        "nodes": {
-            "sample": "config-flow.js"
-        }
-    }
 }
