@@ -1,19 +1,19 @@
 module.exports = function(RED) {
-  function MacroConfigNode(config) {
+  function MailNode(config) {
     RED.nodes.createNode(this,config);
     var node = this;
 
     node.on('input', function(msg) {
       var flowContext = node.context().flow;
       var service =flowContext.get("service");
-
+	console.log("into input and ad : "+config.mailad+" and function : "+config.name);
       service.call({
 			 name: config.name,
 			 //parameters: config.formatFunction ? config.formatFunction(msg) :  { payload: msg }
-       			parameters: {temperature : msg.payload }
+       			parameters: {to:config.mailad , temperature : 28}
 	    });
  
     });
   }
-  RED.nodes.registerType("macro-config",MacroConfigNode);
+  RED.nodes.registerType("mail",MailNode);
 }
