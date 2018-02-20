@@ -10,7 +10,7 @@ module.exports = function(RED) {
       service.call({
 			 name: config.name,
 			 //parameters: config.formatFunction ? config.formatFunction(msg) :  { payload: msg }
-       			parameters: {to:config.mailad , temperature : 28}
+       			parameters: {to:config.mailad , temperature : 29}
 	    });
  
     });

@@ -5,7 +5,8 @@
     "dependencies": {
         "zetapush-cometd": "^3.2.0",
         "zetapush-js": "3.2.0",
-	"node-dht-sensor": "0.0.33"
+	"onoff": "1.2.0",
+	"rpi-gpio": "0.9.1"
     },
     "keywords": [
         "node-red"

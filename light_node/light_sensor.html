@@ -4,14 +4,14 @@
         color: '#a6bbcf',
         defaults: {
             name: {value:""},
-            intervalTime: {value:""},
-	    pin: {value:""}
+	    pin: {value:""},
+	    gpio: {value:""}
         },
         inputs:0,
         outputs:1,
         icon: "file.png",
         label: function() {
-            return this.name||"temperature";
+            return this.name||"light_sensor";
         }
     });
 </script>
@@ -22,12 +22,12 @@
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
     <div class="form-row">
-        <label for="node-input-pin"><i class="icon-tag"></i> Pin number</label>
-        <input type="text" id="node-input-pin" placeholder="Pin number">
+        <label for="node-input-pin"><i class="icon-tag"></i> Sensor Pin number</label>
+        <input type="text" id="node-input-pin" placeholder="Sensor Pin number">
     </div>
 <div class="form-row">
-        <label for="node-input-intervalTime"><i class="icon-tag"></i> Interval Time (ms)</label>
-        <input type="text" id="node-input-intervalTime" placeholder="Interval Time between two measures (ms)">
+        <label for="node-input-gpio"><i class="icon-tag"></i> LED GPIO Number</label>
+        <input type="text" id="node-input-gpio" placeholder="LED GPIO Number">
     </div>	
 </script>
 
